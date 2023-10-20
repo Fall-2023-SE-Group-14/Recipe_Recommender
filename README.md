@@ -86,7 +86,8 @@ This is an overview of the directory structure of the project repository:
 2. Added update feature to edit existing recipes.
 3. Integrated chatGPT to fetch recipes for ingredients unavailable in the database.
 
-
-
-
+## Modified UI
+![Helo](homepage.png)
+![Helo](Add recipe.png)
+![Helo](search recipe.png)
 
