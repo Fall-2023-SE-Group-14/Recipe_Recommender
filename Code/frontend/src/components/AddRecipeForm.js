@@ -32,6 +32,21 @@ class Form extends Component {
     this.props.sendRecipeFormData(dict);
   };
 
+  handleRecipeUpdate = (event) => {
+    event.preventDefault();
+    var dict = {};
+    dict["recipe_name"] = document.getElementById("recipe_name").value;
+    dict["recipe_cuisine"] = document.getElementById("recipe_cuisine").value;
+    dict["recipe_ingredients"] =
+      document.getElementById("recipe_ingredients").value;
+    dict["recipe_instructions"] = document.getElementById(
+      "recipe_instructions"
+    ).value;
+    dict["recipe_time"] = document.getElementById("recipe_time").value;
+    dict["recipe_url"] = document.getElementById("recipe_url").value;
+    this.props.sendRecipeUpdateFormData(dict);
+  };
+
   // render function dispays the UI content i.e the form content
   render() {
     {
@@ -40,7 +55,7 @@ class Form extends Component {
     // returns jsx element
     return (
       <div class=" container gradient-custom-2 mb-5 mt-5 border">
-        <form class='row p-5' onSubmit={this.handleRecipeSubmit}>
+        <form class='row p-5'>
 
         <div className="col-lg-6 d-flex flex-column align-items-center">
           <label style={{ color: 'white', fontWeight: 'bold', display: 'block' }}>Recipe Name</label>
@@ -77,7 +92,7 @@ class Form extends Component {
                     <button
                       type="button"
                       id="submit"
-                      className='btn'
+                      className='btn pr-2'
                       onClick={this.handleRecipeSubmit}
                       style={{
                         color: 'white',
@@ -86,6 +101,21 @@ class Form extends Component {
                       }}
                     >
                      Submit Recipe 
+                    </button>
+
+                    <button
+                      type="button"
+                      id="submit"
+                      className='btn pl-2'
+                      onClick={this.handleRecipeUpdate}
+                      style={{
+                        color: 'white',
+                        fontWeight: 'bold',
+                        border:'1px solid white',
+                        margin: '10px'
+                      }}
+                    >
+                     Update Recipe 
                     </button>
               </div>
    
