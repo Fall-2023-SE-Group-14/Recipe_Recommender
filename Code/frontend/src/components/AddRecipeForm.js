@@ -77,7 +77,7 @@ class Form extends Component {
                     <button
                       type="button"
                       id="submit"
-                      className='btn'
+                      className='btn pr-2'
                       onClick={this.handleRecipeSubmit}
                       style={{
                         color: 'white',
@@ -86,6 +86,20 @@ class Form extends Component {
                       }}
                     >
                      Submit Recipe 
+                    </button>
+
+                    <button
+                      type="button"
+                      id="submit"
+                      className='btn pl-2'
+                      onClick={this.handleRecipeSubmit}
+                      style={{
+                        color: 'white',
+                        fontWeight: 'bold',
+                        border:'1px solid white'
+                      }}
+                    >
+                     Update Recipe 
                     </button>
               </div>
    
