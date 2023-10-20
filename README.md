@@ -49,105 +49,104 @@ This is an overview of the directory structure of the project repository:
 - **/handler**: Handler layer of the project. Contains the router files for the various modules.
 - **/helpers**: Helper files.
 
-Code
-|-- backend
-|   |-- .env
-|   |-- .eslintrc.yml
-|   |-- .prettierignore
-|   |-- __tests__
-|   |   |-- spec.js
-|   |-- adapter
-|   |   |-- chatgpt.js
-|   |   |-- pexel.js
-|   |-- additionalTests
-|   |   |-- test1.js
-|   |   |-- test2.js
-|   |-- api
-|   |   |-- recipes.controller.js
-|   |   |-- recipes.route.js
-|   |   |-- userauth.route.js
-|   |   |-- userauth.service.js
-|   |-- config
-|   |   |-- keys.js
-|   |-- dao
-|   |   |-- recipes
-|   |   |   |-- addNewRecipe.js
-|   |   |   |-- getAllRecipe.js
-|   |   |   |-- getAutoComplete.js
-|   |   |   |-- getTotalRecipeCount.js
-|   |   |   |-- index.js
-|   |   |   |-- recipesDAO.js
-|   |   |   |-- updateRecipe.js
-|   |   |-- users
-|   |   |   |-- getUser.js
-|   |-- docs
-|   |   |-- swagger.yml
-|   |-- dto
-|   |   |-- recipe.js
-|   |   |-- users.js
-|   |-- handler
-|   |   |-- recipes
-|   |   |   |-- router.js
-|   |   |-- router.js
-|   |   |-- users
-|   |   |   |-- router.js
-|   |-- helpers
-|   |   |-- dbConnect.js
-|   |   |-- logger.js
-|   |   |-- mailParam.js
-|   |   |-- mailer.js
-|   |-- index.js
-|   |-- middleware
-|   |   |-- auth.js
-|   |-- package.json
-|   |-- server.js
-|   |-- service
-|   |   |-- recipe
-|   |   |   |-- index.js
-|   |-- tempusers.json
-|   |-- vercel.json
-|-- frontend
-|   |-- junit.xml
-|   |-- package.json
-|   |-- public
-|   |   |-- favicon.ico
-|   |   |-- index.html
-|   |   |-- logo192.png
-|   |   |-- logo512.png
-|   |   |-- manifest.json
-|   |-- src
-|   |   |-- App.css
-|   |   |-- App.js
-|   |   |-- App.test.js
-|   |   |-- Images
-|   |   |   |-- background-image.jpg
-|   |   |-- apis
-|   |   |   |-- recipeDB.js
-|   |   |   |-- youtube.js
-|   |   |-- components
-|   |   |   |-- AddRecipeForm.js
-|   |   |   |-- Footer.js
-|   |   |   |-- Form.js
-|   |   |   |-- Header.js
-|   |   |   |-- HomePage.js
-|   |   |   |-- Recipe.js
-|   |   |   |-- RecipeList.js
-|   |   |   |-- VideoURL.js
-|   |   |   |-- componentImages
-|   |   |   |   |-- bg-card.jpg
-|   |   |   |   |-- bg-card2.jpg
-|   |   |   |   |-- chef.png
-|   |   |   |   |-- chef1.png
-|   |   |   |-- login.css
-|   |   |   |-- login.js
-|   |   |-- index.css
-|   |   |-- index.js
-|   |   |-- logo.svg
-|   |   |-- reportWebVitals.js
-|   |   |-- setupTests.js
-|   |   |-- video.css
-|   |-- tailwind.config.js
-
+- Code
+   - backend
+      - .env
+      - .eslintrc.yml
+      - .prettierignore
+      - __tests__
+         - spec.js
+      - adapter
+         - chatgpt.js
+         - pexel.js
+      - additionalTests
+         - test1.js
+         - test2.js
+      - api
+         - recipes.controller.js
+         - recipes.route.js
+         - userauth.route.js
+         - userauth.service.js
+      - config
+         - keys.js
+      - dao
+         - recipes
+            - addNewRecipe.js
+            - getAllRecipe.js
+            - getAutoComplete.js
+            - getTotalRecipeCount.js
+            - index.js
+            - recipesDAO.js
+            - updateRecipe.js
+         - users
+            - getUser.js
+      - docs
+         - swagger.yml
+      - dto
+         - recipe.js
+         - users.js
+      - handler
+         - recipes
+            - router.js
+         - router.js
+         - users
+            - router.js
+      - helpers
+         - dbConnect.js
+         - logger.js
+         - mailParam.js
+         - mailer.js
+      - index.js
+      - middleware
+         - auth.js
+      - package.json
+      - server.js
+      - service
+         - recipe
+            - index.js
+      - tempusers.json
+      - vercel.json
+   - frontend
+      - junit.xml
+      - package.json
+      - public
+         - favicon.ico
+         - index.html
+         - logo192.png
+         - logo512.png
+         - manifest.json
+      - src
+         - App.css
+         - App.js
+         - App.test.js
+         - Images
+            - background-image.jpg
+         - apis
+            - recipeDB.js
+            - youtube.js
+         - components
+            - AddRecipeForm.js
+            - Footer.js
+            - Form.js
+            - Header.js
+            - HomePage.js
+            - Recipe.js
+            - RecipeList.js
+            - VideoURL.js
+         - componentImages
+            - bg-card.jpg
+            - bg-card2.jpg
+            - chef.png
+            - chef1.png
+         - login.css
+         - login.js
+         - index.css
+         - index.js
+         - logo.svg
+         - reportWebVitals.js
+         - setupTests.js
+         - video.css
+      - tailwind.config.js
 
 ## Setup Steps
 **Installation**
