@@ -90,4 +90,3 @@ This is an overview of the directory structure of the project repository:
 ![Helo](homepage.png)
 ![Helo](addrecipe.png)
 ![Helo](searchrecipe.png)
-

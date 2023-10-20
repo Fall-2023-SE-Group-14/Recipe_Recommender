@@ -32,6 +32,21 @@ class Form extends Component {
     this.props.sendRecipeFormData(dict);
   };
 
+  handleRecipeUpdate = (event) => {
+    event.preventDefault();
+    var dict = {};
+    dict["recipe_name"] = document.getElementById("recipe_name").value;
+    dict["recipe_cuisine"] = document.getElementById("recipe_cuisine").value;
+    dict["recipe_ingredients"] =
+      document.getElementById("recipe_ingredients").value;
+    dict["recipe_instructions"] = document.getElementById(
+      "recipe_instructions"
+    ).value;
+    dict["recipe_time"] = document.getElementById("recipe_time").value;
+    dict["recipe_url"] = document.getElementById("recipe_url").value;
+    this.props.sendRecipeUpdateFormData(dict);
+  };
+
   // render function dispays the UI content i.e the form content
   render() {
     {
@@ -39,74 +54,71 @@ class Form extends Component {
 
     // returns jsx element
     return (
-      <div class="formOutercontainer">
-        <form onSubmit={this.handleRecipeSubmit}>
-          <div className="row pb-1">
-            <div className="input-group col-lg-4 bg-danger text-white">
-              <label class="sideLabel"> Recipe Name: </label> <br />
-              <div className="input-group-append">
-                <input type="text" id="recipe_name" />
-              </div>
-            </div>
-          </div>
+      <div class=" container gradient-custom-2 mb-5 mt-5 border">
+        <form class='row p-5'>
 
-          <div className="row pb-1">
-            <div className="input-group col-lg-4 bg-danger text-white">
-              <label class="sideLabel"> Recipe Ingredients: </label> <br />
-              <div className="input-group-append">
+        <div className="col-lg-6 d-flex flex-column align-items-center">
+          <label style={{ color: 'white', fontWeight: 'bold', display: 'block' }}>Recipe Name</label>
+          <input type="text" id="recipe_name" />
+        </div>
+
+            <div className="col-lg-6 d-flex flex-column align-items-center  mb-4">
+              <label class="" style={{ color: 'white', fontWeight: 'bold' , display: 'block' }}> Recipe Ingredients</label> 
                 <input type="textarea" id="recipe_ingredients" />
-              </div>
-            </div>
-          </div>
-          <div className="row pb-1">
-            <div className="input-group col-lg-4 bg-danger text-white">
-              <label class="sideLabel"> Recipe Instructions: </label> <br />
-              <div className="input-group-append">
+            </div><br></br>
+
+            <div className="col-lg-6 d-flex flex-column align-items-center  mb-4">
+              <label class=""style={{ color: 'white', fontWeight: 'bold' , display: 'block' }}> Recipe Instructions</label> 
                 <input type="text" id="recipe_instructions" />
-              </div>
             </div>
-          </div>
-          <div className="row pb-1">
-            <div className="input-group col-lg-4 bg-danger text-white">
-              <label class="sideLabel"> Recipe Cuisine: </label> <br />
-              <div className="input-group-append">
+
+
+            <div className="col-lg-6 d-flex flex-column align-items-center mb-4">
+              <label class=""style={{ color: 'white', fontWeight: 'bold', display: 'block'  }}> Recipe Cuisine</label> 
                 <input type="text" id="recipe_cuisine" />
-              </div>
-            </div>
-          </div>
-          <div className="row pb-1">
-            <div className="input-group col-lg-4 bg-danger text-white">
-              <label class="sideLabel"> Recipe Time Taken: </label> <br />
-              <div className="input-group-append">
+            </div><br></br>
+
+            <div className="col-lg-6 d-flex flex-column align-items-center  mb-4">
+              <label class=""style={{ color: 'white', fontWeight: 'bold', display: 'block'  }}> Recipe Time Taken</label> 
                 <input type="text" id="recipe_time" />
-              </div>
             </div>
-          </div>
-          <div className="row pb-1">
-            <div className="input-group col-lg-4 bg-danger text-white">
-              <label class="sideLabel"> Recipe Image URL: </label> <br />
-              <div className="input-group-append">
+
+            <div className="col-lg-6 d-flex flex-column align-items-center mb-4">
+              <label class=""style={{ color: 'white', fontWeight: 'bold', display: 'block'  }}> Recipe Image URL</label> 
                 <input type="text" id="recipe_url" />
-              </div>
-            </div>
-          </div>
-          <div className="row pb-1">
-            <div className="input-group col-lg-4 bg-danger text-white">
-              <div className="input-group-append">
-                <div className="row pb-1">
-                  <div className="input-group col-lg-4">
+            </div><br></br>
+
+            <div className="col-lg-12 d-flex flex-column align-items-center pb-10">
                     <button
                       type="button"
                       id="submit"
+                      className='btn pr-2'
                       onClick={this.handleRecipeSubmit}
+                      style={{
+                        color: 'white',
+                        fontWeight: 'bold',
+                        border:'1px solid white'
+                      }}
                     >
-                      <h4> Submit Recipe </h4>
+                     Submit Recipe 
                     </button>
-                  </div>
-                </div>
+
+                    <button
+                      type="button"
+                      id="submit"
+                      className='btn pl-2'
+                      onClick={this.handleRecipeUpdate}
+                      style={{
+                        color: 'white',
+                        fontWeight: 'bold',
+                        border:'1px solid white',
+                        margin: '10px'
+                      }}
+                    >
+                     Update Recipe 
+                    </button>
               </div>
-            </div>
-          </div>
+   
         </form>
       </div>
     );
