@@ -56,7 +56,7 @@ const Recipe = (recipe) => {
       <div className="row containerA" style={{ background: 'white', borderRadius: '8px' }}  >
         <div className="row col-md-6 ">
           <div className='col-md-6'>
-            <img className='p-2' style={{ width: '100%', height: '100%' }} src={recipe.recipe["image-url"]} alt={recipe.recipe.TranslatedRecipeName} />
+            <img className='p-2' style={{ width: '100%', height: '100%' }} src={recipe.recipe["imageUrl"] ? recipe.recipe["imageUrl"] : recipe.recipe["image-url"]} alt={recipe.recipe.TranslatedRecipeName} />
           </div>
 
           <div className='col-md-6 pt-3'>
