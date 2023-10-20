@@ -88,6 +88,6 @@ This is an overview of the directory structure of the project repository:
 
 ## Modified UI
 ![Helo](homepage.png)
-![Helo](Add recipe.png)
-![Helo](search recipe.png)
+![Helo](addrecipe.png)
+![Helo](searchrecipe.png)
 
