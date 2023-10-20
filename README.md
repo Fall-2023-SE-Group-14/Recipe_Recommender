@@ -37,14 +37,17 @@ Experience the joy of cooking with Recipe Recommender, and never wonder what to 
 
 This is an overview of the directory structure of the project repository:
 
-- **/src**: Contains the main source code for the project.
+- **/Code**: Contains the main source code for the project.
 - **/docs**: Documentation files, including READMEs, user manuals, API documentation, and SCORE CARD.
-- **/tests**: Unit tests, integration tests, and test-related code.
-- **/data**: Datasets, data files, or data preprocessing scripts.
+- **/frontend**: Contains the front end code for the project.
+- **/backend**: Contains the backend code for the project.
+- **/__tests__**: Unit tests, integration tests, and test-related code.
 - **/config**: Configuration files for the project.
-- **/scripts**: Additional utility scripts.
-- **/assets**: Graphics, images, media files, and other project assets.
-- **/build**: Compiled code, build artifacts, and output files (ignored in version control).
+- **/adapter**: Adapter layer of the backend. Contains chatGPT integration.
+- **/dao**: Contains the methods implemented for the various backend functionalities.
+- **/dto**: Contains the models used in the project.
+- **/handler**: Handler layer of the project. Contains the router files for the various modules.
+- **/helpers**: Helper files.
 
 
 ## Setup Steps
@@ -80,6 +83,8 @@ This is an overview of the directory structure of the project repository:
 ## Modifications
 
 1. User-friendly and improved UI
+2. Added update feature to edit existing recipes.
+3. Integrated chatGPT to fetch recipes for ingredients unavailable in the database.
 
 
 
