@@ -19,7 +19,8 @@ Recipe Recommender is an innovative application that simplifies the process of m
 ## Project 2 Demo Video
 [![Demo Video Project 2](https://img.youtube.com/vi/dcHxln0QEB4/0.jpg)](https://www.youtube.com/watch?v=dcHxln0QEB4)
 
-
+## API SPEC DOC
+https://fall-2023-se-group-14.github.io/Recipe_Recommender/
 
 ## Key Features
 
