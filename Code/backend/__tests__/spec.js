@@ -100,7 +100,7 @@ describe("checking api", () => {
 
   it("is the API is functional test 11", async function () {
     const response = await request.put("/recipes/recipe").send({
-      TranslatedRecipeName: "Jay's Subji",
+      TranslatedRecipeName: "Jay's Subji2",
       TranslatedInstructions:
         "Fry the veggies in oil and add salt and spices as reqd",
       TotalTimeInMins: 15,
@@ -151,7 +151,7 @@ describe("checking api", () => {
     const response = await request
       .post("/recipes/recipe")
       .send({
-        TranslatedRecipeName: "Jay's Subji",
+        TranslatedRecipeName: "Jay's Subji3",
         TotalTimeInMins: 15,
         Cuisine: "Indian",
         CleanedIngredients: ["veggies", "oil", "spices", "salt"],
@@ -168,7 +168,7 @@ describe("checking api", () => {
     const response = await request
       .post("/recipes/recipe")
       .send({
-        TranslatedRecipeName: "Jay's Subji",
+        TranslatedRecipeName: "Jay's Subji4",
         TranslatedInstructions:
           "Fry the veggies in oil and add salt and spices as reqd",
         Cuisine: "Indian",
@@ -186,7 +186,7 @@ describe("checking api", () => {
     const response = await request
       .post("/recipes/recipe")
       .send({
-        TranslatedRecipeName: "Jay's Subji",
+        TranslatedRecipeName: "Jay's Subji5",
         TranslatedInstructions:
           "Fry the veggies in oil and add salt and spices as reqd",
         TotalTimeInMins: 15,
@@ -204,7 +204,7 @@ describe("checking api", () => {
     const response = await request
       .post("/recipes/recipe")
       .send({
-        TranslatedRecipeName: "Jay's Subji",
+        TranslatedRecipeName: "Jay's Subji6",
         TranslatedInstructions:
           "Fry the veggies in oil and add salt and spices as reqd",
         TotalTimeInMins: 15,
@@ -222,7 +222,7 @@ describe("checking api", () => {
     const response = await request
       .post("/recipes/recipe")
       .send({
-        TranslatedRecipeName: "Jay's Subji",
+        TranslatedRecipeName: "Jay's Subji7",
         TranslatedInstructions:
           "Fry the veggies in oil and add salt and spices as reqd",
         TotalTimeInMins: 15,
@@ -239,7 +239,7 @@ describe("checking api", () => {
     const response = await request
       .post("/recipes/recipe")
       .send({
-        TranslatedRecipeName: "Jay's Subji",
+        TranslatedRecipeName: "Jay's Subji8",
         TranslatedInstructions:
           "Fry the veggies in oil and add salt and spices as reqd",
         TotalTimeInMins: 15,
@@ -257,7 +257,7 @@ describe("checking api", () => {
     const response = await request
       .post("/recipes/recipe")
       .send({
-        TranslatedRecipeName: "Jay's Subji",
+        TranslatedRecipeName: "Jay's Subji9",
         TranslatedInstructions:
           "Fry the veggies in oil and add salt and spices as reqd",
         TotalTimeInMins: 15,
