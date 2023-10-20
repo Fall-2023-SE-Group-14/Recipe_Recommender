@@ -123,7 +123,7 @@ class App extends Component {
     try {
       const response = await recipeDB.get("/recipes", {
         params: {
-          CleanedIngredients: ingredient,
+          ingredients: ingredient,
           Cuisine: cuis,
           Email: mail,
           Flag: flag,
