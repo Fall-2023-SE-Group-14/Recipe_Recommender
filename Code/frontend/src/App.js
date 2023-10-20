@@ -64,6 +64,33 @@ class App extends Component {
       console.log(err);
     }
   };
+
+  handleRecipeUpdate = async (formDict) => {
+    const addRecipeDetails = {
+      CleanedIngredients: formDict["recipe_ingredients"].split(","),
+      Cuisine: formDict["recipe_cuisine"],
+      TranslatedRecipeName: formDict["recipe_name"],
+      TranslatedInstructions: formDict["recipe_instructions"],
+      TotalTimeInMins: Number(formDict["recipe_time"]),
+      ImageUrl: formDict["recipe_url"],
+    };
+    this.putRecipeDetails(addRecipeDetails);
+  };
+
+  putRecipeDetails = async (addRecipeDetails) => {
+    try {
+      console.log("inside app.js", addRecipeDetails);
+      const response = await recipeDB.put(
+        "recipes/recipe",
+        addRecipeDetails
+      );
+      // this.setState({
+      //   recipeList: response.data.recipes,
+      // });
+    } catch (err) {
+      console.log(err);
+    }
+  };
   // Function to get the user input from the Form component on Submit action
   handleSubmit = async (formDict) => {
     this.setState({
@@ -152,7 +179,8 @@ class App extends Component {
 
           <Route path="/addRecipe">
             <Header loginFlag={this.state.loginFlag} />
-            <AddRecipeForm sendRecipeFormData={this.handleRecipeSubmit} />
+            <AddRecipeForm sendRecipeFormData={this.handleRecipeSubmit}
+                sendRecipeUpdateFormData={this.handleRecipeUpdate} />
             <Footer />
           </Route>
 
