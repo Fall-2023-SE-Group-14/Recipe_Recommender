@@ -23,7 +23,7 @@ function HomePage() {
     <Link to="/addRecipe" style={{textDecoration: 'none',display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
         <button
         className="btn btn-primary gradient-custom-2 p-3"
-        type="button" >Add Recipe</button>
+        type="button" >Add/Update Recipe</button>
     </Link>
     </div>
 </div>
