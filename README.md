@@ -4,6 +4,7 @@
 
 Recipe Recommender is an innovative application that simplifies the process of meal planning by suggesting recipes based on the ingredients you have readily available. Cooking can be a delightful experience, but deciding what to prepare with the ingredients on hand can be a daunting task. Our software is designed to alleviate this culinary challenge by offering a wide range of delectable recipes you can create using the ingredients in your kitchen.
 
+[![DOI](https://zenodo.org/badge/705370990.svg)](https://zenodo.org/doi/10.5281/zenodo.10028151)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Made With](https://img.shields.io/badge/made%20with-javascript-gree)](https://www.javascript.com/)
 [![Open Issues](https://img.shields.io/github/issues-raw/Fall-2023-SE-Group-14/Recipe_Recommender?label=Open%20Issues)](https://github.com/Fall-2023-SE-Group-14/Recipe_Recommender/issues)
