@@ -16,6 +16,11 @@ Recipe Recommender is an innovative application that simplifies the process of m
 ![GitHub contributors](https://img.shields.io/github/contributors/Fall-2023-SE-Group-14/Recipe_Recommender)
 [![Close as a feature](https://github.com/Fall-2023-SE-Group-14/Recipe_Recommender/actions/workflows/close_as_a_feature.yml/badge.svg)](https://github.com/Fall-2023-SE-Group-14/Recipe_Recommender/actions/workflows/close_as_a_feature.yml)
 
+## Project 2 Demo Video
+[![Demo Video Project 2](https://img.youtube.com/vi/dcHxln0QEB4/0.jpg)](https://www.youtube.com/watch?v=dcHxln0QEB4)
+
+
+
 ## Key Features
 
 - **Ingredient-Based Recommendations:** Input the ingredients you have, and Recipe Recommender will provide you with a selection of recipes that match your available items.
