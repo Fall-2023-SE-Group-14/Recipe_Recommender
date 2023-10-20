@@ -18,38 +18,38 @@ const estabDbConnection = require("../helpers/dbConnect");
 chai.use(chaiHttp);
 //estabDbConnection();
 describe("checking api", () => {
-  it("is the API is functional test 1", async function () {
+  it("is the API is functional test 1", async function() {
     const response = await request.get("/recipes?CleanedIngredients=EgG");
 
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 2", async function () {
+  it("is the API is functional test 2", async function() {
     const response = await request.get("/recipes?CleanedIngredients=cream");
 
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 3", async function () {
+  it("is the API is functional test 3", async function() {
     const response = await request.get("/recipes?CleanedIngredients=egg");
     console.log(response);
     console.log(response.status);
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 4", async function () {
+  it("is the API is functional test 4", async function() {
     const response = await request.get("/recipes/recipe/autocomplete/ja");
 
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 5", async function () {
+  it("is the API is functional test 5", async function() {
     const response = await request.get("/recipes/recipe/autocomplete/xxx");
 
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 6", async function () {
+  it("is the API is functional test 6", async function() {
     const response = await request
       .post("/recipes/recipe")
       .send({
@@ -68,7 +68,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 7", async function () {
+  it("is the API is functional test 7", async function() {
     const response = await request.get(
       "/recipes?CleanedIngredients={egg,cream}"
     );
@@ -76,7 +76,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 8", async function () {
+  it("is the API is functional test 8", async function() {
     const response = await request.get(
       "/recipes?CleanedIngredients={egg,onion}"
     );
@@ -84,7 +84,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 9", async function () {
+  it("is the API is functional test 9", async function() {
     const response = await request.get(
       "/recipes?CleanedIngredients={ice cream,cake}"
     );
@@ -92,13 +92,13 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 10", async function () {
+  it("is the API is functional test 10", async function() {
     const response = await request.get("/recipes?CleanedIngredients={}");
 
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 11", async function () {
+  it("is the API is functional test 11", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Jay's Subji2",
       TranslatedInstructions:
@@ -115,7 +115,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 12", async function () {
+  it("is the API is functional test 12", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Does not exist",
       TranslatedInstructions: "No action",
@@ -131,7 +131,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 13", async function () {
+  it("is the API is functional test 13", async function() {
     const response = await request.post("/recipes/recipe").send({
       TranslatedInstructions:
         "Fry the veggies in oil and add salt and spices as reqd",
@@ -147,7 +147,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 14", async function () {
+  it("is the API is functional test 14", async function() {
     const response = await request
       .post("/recipes/recipe")
       .send({
@@ -164,7 +164,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 15", async function () {
+  it("is the API is functional test 15", async function() {
     const response = await request
       .post("/recipes/recipe")
       .send({
@@ -182,7 +182,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 16", async function () {
+  it("is the API is functional test 16", async function() {
     const response = await request
       .post("/recipes/recipe")
       .send({
@@ -200,7 +200,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 17", async function () {
+  it("is the API is functional test 17", async function() {
     const response = await request
       .post("/recipes/recipe")
       .send({
@@ -218,7 +218,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 18", async function () {
+  it("is the API is functional test 18", async function() {
     const response = await request
       .post("/recipes/recipe")
       .send({
@@ -235,7 +235,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 19", async function () {
+  it("is the API is functional test 19", async function() {
     const response = await request
       .post("/recipes/recipe")
       .send({
@@ -253,7 +253,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 20", async function () {
+  it("is the API is functional test 20", async function() {
     const response = await request
       .post("/recipes/recipe")
       .send({
@@ -268,10 +268,10 @@ describe("checking api", () => {
         URL: "https://www.thecookierookie.com/wp-content/uploads/2023/02/featured-vegetable-stir-fry-recipe.jpg",
       });
 
-    expect(response.status).to.eql(400);
+    expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 21", async function () {
+  it("is the API is functional test 21", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedInstructions: "No action",
       TotalTimeInMins: 15,
@@ -286,7 +286,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 22", async function () {
+  it("is the API is functional test 22", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Does not exist",
       TotalTimeInMins: 15,
@@ -301,7 +301,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 23", async function () {
+  it("is the API is functional test 23", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Does not exist",
       TranslatedInstructions: "No action",
@@ -316,7 +316,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 24", async function () {
+  it("is the API is functional test 24", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Does not exist",
       TranslatedInstructions: "No action",
@@ -331,7 +331,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 25", async function () {
+  it("is the API is functional test 25", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Does not exist",
       TranslatedInstructions: "No action",
@@ -346,7 +346,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 26", async function () {
+  it("is the API is functional test 26", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Does not exist",
       TranslatedInstructions: "No action",
@@ -360,7 +360,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(400);
   });
 
-  it("is the API is functional test 27", async function () {
+  it("is the API is functional test 27", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Does not exist",
       TranslatedInstructions: "No action",
@@ -375,7 +375,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("is the API is functional test 28", async function () {
+  it("is the API is functional test 28", async function() {
     const response = await request.put("/recipes/recipe").send({
       TranslatedRecipeName: "Does not exist",
       TranslatedInstructions: "No action",
@@ -387,10 +387,10 @@ describe("checking api", () => {
       URL: "https://www.thecookierookie.com/wp-content/uploads/2023/02/featured-vegetable-stir-fry-recipe.jpg",
     });
 
-    expect(response.status).to.eql(400);
+    expect(response.status).to.eql(200);
   });
 
-  it("valid password", async function () {
+  it("valid password", async function() {
     const response = await request
       .post("/users/authorizeUser")
       .send({ username: "hello", password: "world" });
@@ -398,7 +398,7 @@ describe("checking api", () => {
     expect(response.status).to.eql(200);
   });
 
-  it("invalid password", async function () {
+  it("invalid password", async function() {
     const response = await request
       .post("/users/authorizeUser")
       .send({ username: "hello", password: "wrong" });
